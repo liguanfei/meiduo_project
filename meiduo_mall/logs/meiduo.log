@@ -1,0 +1,18 @@
+INFO 2023-11-29 08:04:31,585 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 08:04:41,788 basehttp 161 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-11-29 08:05:13,034 basehttp 161 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-11-29 08:07:05,900 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 08:07:29,077 basehttp 161 "GET /static/register.html HTTP/1.1" 200 5303
+INFO 2023-11-29 08:07:29,183 basehttp 161 "GET /static/css/main.css HTTP/1.1" 200 39722
+WARNING 2023-11-29 08:07:29,252 basehttp 161 "GET /static/%7B%7B%20static('images/logo.png')%20%7D%7D HTTP/1.1" 404 1894
+WARNING 2023-11-29 08:07:29,254 basehttp 161 "GET /static/%7B%7B%20static('js/vue-2.5.16.js')%20%7D%7D HTTP/1.1" 404 1897
+WARNING 2023-11-29 08:07:29,256 basehttp 161 "GET /static/%7B%7B%20static('css/reset.css')%20%7D%7D HTTP/1.1" 404 1888
+WARNING 2023-11-29 08:07:29,261 basehttp 161 "GET /static/%7B%7B%20static('css/main.css')%20%7D%7D HTTP/1.1" 404 1885
+WARNING 2023-11-29 08:07:29,264 basehttp 161 "GET /static/%7B%7B%20static('js/host.js')%20%7D%7D HTTP/1.1" 404 1879
+WARNING 2023-11-29 08:07:29,270 basehttp 161 "GET /static/%7B%7B%20static('js/axios-0.18.0.min.js')%20%7D%7D HTTP/1.1" 404 1915
+WARNING 2023-11-29 08:07:29,287 basehttp 161 "GET /static/%7B%7B%20static('images/pic_code.jpg')%20%7D%7D HTTP/1.1" 404 1906
+WARNING 2023-11-29 08:07:29,289 basehttp 161 "GET /static/%7B%7B%20static('js/common.js')%20%7D%7D HTTP/1.1" 404 1885
+WARNING 2023-11-29 08:07:29,291 basehttp 161 "GET /static/%7B%7B%20static('js/register.js')%20%7D%7D HTTP/1.1" 404 1891
+INFO 2023-11-29 08:07:29,297 basehttp 161 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2023-11-29 08:07:29,302 basehttp 161 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+INFO 2023-11-29 08:07:29,302 basehttp 161 "GET /static/images/icons02.png HTTP/1.1" 200 3935
