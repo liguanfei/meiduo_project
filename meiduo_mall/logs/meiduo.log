@@ -16,3 +16,96 @@ WARNING 2023-11-29 08:07:29,291 basehttp 161 "GET /static/%7B%7B%20static('js/re
 INFO 2023-11-29 08:07:29,297 basehttp 161 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
 INFO 2023-11-29 08:07:29,302 basehttp 161 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
 INFO 2023-11-29 08:07:29,302 basehttp 161 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2023-11-29 08:14:37,589 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 08:14:44,893 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2023-11-29 08:14:45,401 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 08:17:03,034 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 08:47:33,041 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 08:48:01,122 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 08:48:06,410 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2023-11-29 08:48:06,756 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 08:48:12,039 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/apps.py changed, reloading.
+INFO 2023-11-29 08:48:12,425 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 08:50:40,345 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 10:55:28,687 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 10:56:33,036 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 10:56:50,620 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2023-11-29 10:56:51,250 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 10:57:02,715 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2023-11-29 10:57:03,285 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 10:57:12,683 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2023-11-29 10:57:13,088 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 10:57:21,480 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2023-11-29 10:57:21,848 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 10:57:31,249 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2023-11-29 10:57:31,732 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 10:57:48,698 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 10:58:00,123 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2023-11-29 10:58:00,722 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 10:58:10,157 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2023-11-29 10:58:10,736 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 10:58:19,169 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2023-11-29 10:58:19,745 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 10:58:27,138 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2023-11-29 10:58:27,509 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 15:18:46,211 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 15:19:12,525 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 15:20:39,054 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2023-11-29 15:20:39,997 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 15:22:14,485 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2023-11-29 15:22:15,233 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 15:22:18,193 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 15:23:34,409 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2023-11-29 15:23:35,126 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 15:24:19,942 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2023-11-29 15:24:20,704 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 15:33:41,500 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2023-11-29 15:33:42,385 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 15:33:52,705 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2023-11-29 15:33:53,566 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 15:35:25,048 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/apps.py changed, reloading.
+INFO 2023-11-29 15:35:25,754 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 15:35:34,029 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/apps.py changed, reloading.
+INFO 2023-11-29 15:35:34,657 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 15:37:57,506 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 15:40:51,882 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 15:42:59,885 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2023-11-29 15:43:00,773 autoreload 637 Watching for file changes with StatReloader
+ERROR 2023-11-29 15:43:22,399 log 230 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py", line 16, in get
+    return render(request, 'register.html')
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: register.html
+ERROR 2023-11-29 15:43:22,401 basehttp 161 "GET /register/ HTTP/1.1" 500 95007
+INFO 2023-11-29 15:44:07,067 basehttp 161 "GET /register/ HTTP/1.1" 200 4943
+INFO 2023-11-29 15:44:07,147 basehttp 161 "GET /static/js/host.js HTTP/1.1" 200 75
+INFO 2023-11-29 15:44:07,152 basehttp 161 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2023-11-29 15:44:07,155 basehttp 161 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2023-11-29 15:44:07,159 basehttp 161 "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+INFO 2023-11-29 15:44:07,170 basehttp 161 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2023-11-29 15:44:07,175 basehttp 161 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2023-11-29 15:44:07,179 basehttp 161 "GET /static/js/register.js HTTP/1.1" 200 15584
+WARNING 2023-11-29 15:44:08,514 log 230 Not Found: /usernames/admin/count/
+WARNING 2023-11-29 15:44:08,515 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 404 2324
+INFO 2023-11-29 15:45:12,009 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/apps.py changed, reloading.
+INFO 2023-11-29 15:45:12,743 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 15:45:20,198 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2023-11-29 15:45:20,733 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 15:45:23,918 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2023-11-29 15:45:24,402 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-29 15:45:29,815 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/apps.py changed, reloading.
+INFO 2023-11-29 15:45:30,361 autoreload 637 Watching for file changes with StatReloader
