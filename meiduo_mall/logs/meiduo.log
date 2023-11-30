@@ -174,3 +174,19 @@ WARNING 2023-11-30 09:14:46,697 log 230 Not Found: /carts/simple/
 WARNING 2023-11-30 09:14:46,698 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 2850
 INFO 2023-11-30 09:15:09,471 basehttp 161 "GET /register/ HTTP/1.1" 200 4977
 INFO 2023-11-30 09:15:12,647 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-11-30 09:38:13,871 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-30 09:38:17,774 basehttp 161 "GET /register/ HTTP/1.1" 200 5019
+WARNING 2023-11-30 09:38:17,929 log 230 Not Found: /register/images/pic_code.jpg
+WARNING 2023-11-30 09:38:17,929 basehttp 161 "GET /register/images/pic_code.jpg HTTP/1.1" 404 3080
+INFO 2023-11-30 09:38:20,482 basehttp 161 "GET /register/ HTTP/1.1" 200 5019
+WARNING 2023-11-30 09:38:20,532 log 230 Not Found: /register/images/pic_code.jpg
+WARNING 2023-11-30 09:38:20,534 basehttp 161 "GET /register/images/pic_code.jpg HTTP/1.1" 404 3080
+INFO 2023-11-30 09:38:22,032 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-11-30 09:39:38,458 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-30 09:39:42,043 basehttp 161 "GET /register/ HTTP/1.1" 200 5159
+INFO 2023-11-30 09:39:42,162 basehttp 161 "GET /image_codes/46decd90-1a51-4e48-86fd-e30e64e75286/ HTTP/1.1" 200 3299
+INFO 2023-11-30 09:39:43,607 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-11-30 09:39:43,681 basehttp 161 "GET /image_codes/9b0f0c6d-38db-4a05-aca0-dfa2a6c8aa3b/ HTTP/1.1" 200 3228
+INFO 2023-11-30 09:39:44,697 basehttp 161 "GET /image_codes/cb68345d-ec1d-4f5e-a2d0-64d3342492f1/ HTTP/1.1" 200 2932
+INFO 2023-11-30 09:39:45,553 basehttp 161 "GET /image_codes/cba08991-4509-42da-ae94-1595b338dec9/ HTTP/1.1" 200 3380
+INFO 2023-11-30 09:39:46,253 basehttp 161 "GET /image_codes/aa7b52f0-e0ea-4f56-92ea-1dc71c1e467a/ HTTP/1.1" 200 3478
