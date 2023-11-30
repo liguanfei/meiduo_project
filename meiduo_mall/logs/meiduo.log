@@ -109,3 +109,15 @@ INFO 2023-11-29 15:45:23,918 autoreload 251 /Users/dickens/Desktop/test/python/d
 INFO 2023-11-29 15:45:24,402 autoreload 637 Watching for file changes with StatReloader
 INFO 2023-11-29 15:45:29,815 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/apps.py changed, reloading.
 INFO 2023-11-29 15:45:30,361 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-30 08:26:21,124 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-30 08:26:50,413 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-30 08:28:02,120 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-30 08:28:28,046 basehttp 161 "GET /register/ HTTP/1.1" 200 4986
+INFO 2023-11-30 08:28:29,612 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-11-30 08:28:30,722 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-11-30 08:29:02,272 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-30 08:36:07,801 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-30 08:49:55,715 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-11-30 08:50:00,207 basehttp 161 "GET /register/ HTTP/1.1" 200 4986
+INFO 2023-11-30 08:50:01,661 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-11-30 08:50:07,470 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41

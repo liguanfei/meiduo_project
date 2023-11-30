@@ -4,8 +4,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>美多商城-注册</title>
-    {#	<link rel="stylesheet" type="text/css" href="../static/css/reset.css">#}
-    {#	<link rel="stylesheet" type="text/css" href="../static/css/main.css">#}
+    {#
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css">
+    #}
+    {#
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    #}
     <link rel="stylesheet" type="text/css" href="{{ static('css/reset.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ static('css/main.css') }}">
     <script type="text/javascript" src="{{ static('js/host.js') }}"></script>
@@ -34,8 +38,9 @@
                     <ul>
                         <li>
                             <label>用户名:</label>
-                            <input @blur="check_username" v-model="username" type="text" name="username" id="user_name">
-                            <span v-show="error_name" class="error_tip">[[ error_name_message ]]</span>
+                            <input v-model="username" @blur="check_username" type="text" name="user_name"
+                                   id="user_name">
+                            <span v-show="error_name" class="error_tip">请输入5-20个字符的用户</span>
                         </li>
                         <li>
                             <label>密码:</label>
@@ -70,7 +75,7 @@
                             <span v-show="error_allow" class="error_tip">请勾选用户协议</span>
                         </li>
                         {% if register_errmsg %}
-                            <span class="error_tip2">{{ register_errmsg }}</span>
+                        <span class="error_tip2">{{ register_errmsg }}</span>
                         {% endif %}
                         <li class="reg_sub">
                             <input type="submit" value="注 册">
