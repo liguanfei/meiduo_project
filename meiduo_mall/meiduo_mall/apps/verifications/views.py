@@ -80,7 +80,7 @@ class SMSCodeView(View):
         pl = redis_conn.pipeline()
 
         # 将Redis请求添加到队列
-        pl.setex('sms_%s' % mobile, 300, sms_code)
+        pl.setex('sms_code_%s' % mobile, 300, sms_code)
         pl.setex('send_flag_%s' % mobile, 60, 1)
 
         # 执行请求
@@ -90,8 +90,8 @@ class SMSCodeView(View):
         # 短信模板
         # SMS_CODE_REDIS_EXPIRES // 60 = 5min
         # SEND_SMS_TEMPLATE_ID = 1
-        CCP().send_template_sms(mobile, [sms_code, 5],
-                                1)
+        # CCP().send_template_sms(mobile, [sms_code, 5],
+        #                         1)
 
         print("code: ", sms_code)
 

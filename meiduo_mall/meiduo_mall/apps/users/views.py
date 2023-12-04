@@ -1,7 +1,7 @@
 import re
 
 from django import http
-from django.contrib.auth import login
+from django.contrib.auth import login, authenticate
 from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.views import View
@@ -12,6 +12,60 @@ from pymysql import DatabaseError
 
 
 # Create your views here.
+
+class LoginView(View):
+    """用户名登录"""
+
+    def get(self, request):
+        """提供登录界面的接口"""
+        # 返回登录界面
+        return render(request, 'login.html')
+
+    def post(self, request):
+        """实现登录逻辑"""
+        # 1. 获取前端传递参数
+        # 2. 校验参数
+        # 3. 获取登录用户,并查看是否存在
+        # 4. 实现状态保持
+        # 5. 返回响应
+        # 接受参数
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        remembered = request.POST.get('remembered')
+
+        # 校验参数
+        # 判断参数是否齐全
+        # 这里注意: remembered 这个参数可以是 None 或是 'on'
+        # 所以我们不对它是否存在进行判断:
+        if not all([username, password]):
+            return http.HttpResponseForbidden('缺少必传参数')
+
+        # 判断用户名是否是5-20个字符
+        if not re.match(r'^[a-zA-Z0-9_-]{5,20}$', username):
+            return http.HttpResponseForbidden('请输入正确的用户名或手机号')
+
+        # 判断密码是否是8-20个数字
+        if not re.match(r'^[0-9A-Za-z]{8,20}$', password):
+            return http.HttpResponseForbidden('密码最少8位，最长20位')
+
+        # 认证登录用户
+        user = authenticate(username=username, password=password)
+        if user is None:
+            return render(request, 'login.html', {'account_errmsg': '用户名或密码错误'})
+
+        # 实现状态保持
+        login(request, user)
+        # 设置状态保持的周期
+        if remembered != 'on':
+            # 不记住用户：浏览器会话结束就过期
+            request.session.set_expiry(0)
+        else:
+            # 记住用户：None 表示两周后过期
+            request.session.set_expiry(None)
+
+        # 响应登录结果
+        return redirect(reverse('contents:index'))
+
 
 class MobileCountView(View):
     """判断手机号是否重复注册"""
@@ -92,6 +146,8 @@ class RegisterView(View):
         # 从 redis 中获取保存的 sms_code
         sms_code_server = redis_conn.get('sms_code_%s' % mobile)
 
+        print(sms_code_server)
+
         # 判断 sms_code_server 是否存在
         if sms_code_server is None:
             # 不存在直接返回, 说明服务器的过期了, 超时
@@ -105,6 +161,8 @@ class RegisterView(View):
             return render(request,
                           'register.html',
                           {'sms_code_errmsg': '输入短信验证码有误'})
+
+        print("2")
 
         # 保存注册数据
         try:

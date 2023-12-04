@@ -403,3 +403,155 @@ INFO 2023-12-04 08:28:06,301 basehttp 75 - Broken pipe from ('127.0.0.1', 50963)
 INFO 2023-12-04 08:28:06,303 basehttp 75 - Broken pipe from ('127.0.0.1', 51049)
 
 INFO 2023-12-04 08:28:06,331 basehttp 161 "GET /image_codes/d472dfbd-fcf1-4e20-89de-7b8ef98c86aa/ HTTP/1.1" 200 2942
+INFO 2023-12-04 08:33:28,065 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-04 08:33:34,821 basehttp 161 "GET /login HTTP/1.1" 301 0
+INFO 2023-12-04 08:33:34,840 basehttp 161 "GET /login/ HTTP/1.1" 200 2629
+INFO 2023-12-04 08:33:34,877 basehttp 161 "GET /static/js/login.js HTTP/1.1" 200 5212
+INFO 2023-12-04 08:33:34,880 basehttp 161 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2023-12-04 08:33:34,880 basehttp 161 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2023-12-04 08:33:34,884 basehttp 161 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2023-12-04 08:45:25,873 basehttp 161 "GET /login/ HTTP/1.1" 200 3257
+INFO 2023-12-04 08:45:49,352 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2023-12-04 08:45:50,039 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-04 08:46:05,704 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2023-12-04 08:46:06,066 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-04 08:46:23,784 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2023-12-04 08:46:24,274 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-04 08:51:36,715 basehttp 161 "GET /register/ HTTP/1.1" 200 5415
+INFO 2023-12-04 08:51:36,826 basehttp 161 "GET /image_codes/36f97723-e49a-4bec-a1dd-8a7c642161a3/ HTTP/1.1" 200 3092
+INFO 2023-12-04 08:51:40,269 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 08:51:48,561 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 08:51:48,605 basehttp 161 "GET /image_codes/97b76229-9105-4d30-970a-8885a8ff116c/ HTTP/1.1" 200 3241
+INFO 2023-12-04 08:51:52,998 views 64 827327
+INFO 2023-12-04 08:51:53,002 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 08:51:53,169 basehttp 161 "GET /sms_codes/17613731215/?image_code=rw6p&image_code_id=97b76229-9105-4d30-970a-8885a8ff116c HTTP/1.1" 200 63
+INFO 2023-12-04 08:51:53,187 basehttp 161 "GET /image_codes/91ca780f-df23-4d1e-b726-8170d395e8cd/ HTTP/1.1" 200 3495
+INFO 2023-12-04 08:51:58,522 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 08:51:58,524 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 08:51:58,526 basehttp 161 "POST /register/ HTTP/1.1" 200 5529
+INFO 2023-12-04 08:51:58,569 basehttp 161 "GET /image_codes/da9dbbdf-8ac6-4a16-b405-8ae72f797090/ HTTP/1.1" 200 3168
+WARNING 2023-12-04 08:52:41,623 basehttp 161 "GET /static/js/axios.min.map HTTP/1.1" 404 1807
+INFO 2023-12-04 08:52:50,131 basehttp 161 "GET /register/ HTTP/1.1" 200 5415
+WARNING 2023-12-04 08:52:50,237 basehttp 161 "GET /static/js/axios.min.map HTTP/1.1" 404 1807
+INFO 2023-12-04 08:52:50,240 basehttp 161 "GET /image_codes/8a353c7e-9767-4c03-b4bc-05c911480bba/ HTTP/1.1" 200 3219
+INFO 2023-12-04 08:53:02,863 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 08:53:14,646 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 08:53:21,230 basehttp 161 "GET /sms_codes/17613731215/?image_code=p4v6&image_code_id=8a353c7e-9767-4c03-b4bc-05c911480bba HTTP/1.1" 200 81
+INFO 2023-12-04 08:53:21,246 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 08:53:21,251 basehttp 161 "GET /image_codes/47964946-126e-47e9-a1c4-0eb21108addf/ HTTP/1.1" 200 3040
+INFO 2023-12-04 08:53:27,261 views 64 539670
+INFO 2023-12-04 08:53:27,268 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 08:53:27,431 basehttp 161 "GET /sms_codes/17613731215/?image_code=bfba&image_code_id=47964946-126e-47e9-a1c4-0eb21108addf HTTP/1.1" 200 63
+INFO 2023-12-04 08:53:27,454 basehttp 161 "GET /image_codes/1e462a03-d062-4b3d-bb2b-247e94ebf3c9/ HTTP/1.1" 200 3184
+INFO 2023-12-04 08:53:35,111 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 08:53:35,116 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 08:53:35,118 basehttp 161 "POST /register/ HTTP/1.1" 200 5529
+WARNING 2023-12-04 08:53:35,204 basehttp 161 "GET /static/js/axios.min.map HTTP/1.1" 404 1807
+INFO 2023-12-04 08:53:35,206 basehttp 161 "GET /image_codes/d7453afb-40b4-4382-b149-1391b846cfd5/ HTTP/1.1" 200 3301
+INFO 2023-12-04 08:55:40,200 basehttp 161 "GET / HTTP/1.1" 200 24696
+INFO 2023-12-04 08:55:40,223 basehttp 161 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2023-12-04 08:55:40,257 basehttp 161 "GET /static/images/slide01.jpg HTTP/1.1" 200 67813
+INFO 2023-12-04 08:55:40,260 basehttp 161 "GET /static/images/slide02.jpg HTTP/1.1" 200 89905
+INFO 2023-12-04 08:55:40,263 basehttp 161 "GET /static/images/banner01.jpg HTTP/1.1" 200 23658
+INFO 2023-12-04 08:55:40,264 basehttp 161 "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+INFO 2023-12-04 08:55:40,265 basehttp 161 "GET /static/images/slide03.jpg HTTP/1.1" 200 70152
+INFO 2023-12-04 08:55:40,265 basehttp 161 "GET /static/images/slide04.jpg HTTP/1.1" 200 107973
+INFO 2023-12-04 08:55:40,281 basehttp 161 "GET /static/images/banner02.jpg HTTP/1.1" 200 26729
+INFO 2023-12-04 08:55:40,282 basehttp 161 "GET /static/images/banner03.jpg HTTP/1.1" 200 22681
+WARNING 2023-12-04 08:55:40,398 log 230 Not Found: /carts/simple/
+WARNING 2023-12-04 08:55:40,398 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3395
+INFO 2023-12-04 09:00:08,818 basehttp 161 "GET /register/ HTTP/1.1" 200 5415
+INFO 2023-12-04 09:00:08,897 basehttp 161 "GET /image_codes/4f349266-88be-4e3b-9de2-7f2e86a68d94/ HTTP/1.1" 200 3468
+INFO 2023-12-04 09:00:13,779 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 09:00:22,110 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 09:00:22,171 basehttp 161 "GET /image_codes/0019d5ad-e37e-4c2a-aa69-8ff76440f871/ HTTP/1.1" 200 2942
+INFO 2023-12-04 09:00:26,301 views 64 228218
+INFO 2023-12-04 09:00:26,305 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 09:00:26,427 basehttp 161 "GET /sms_codes/17613731215/?image_code=o43d&image_code_id=0019d5ad-e37e-4c2a-aa69-8ff76440f871 HTTP/1.1" 200 63
+INFO 2023-12-04 09:00:26,447 basehttp 161 "GET /image_codes/1afd84dd-6570-4202-a379-6b78351ee294/ HTTP/1.1" 200 2710
+INFO 2023-12-04 09:00:32,351 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 09:00:32,356 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 09:00:32,356 basehttp 161 "POST /register/ HTTP/1.1" 200 5529
+INFO 2023-12-04 09:00:32,404 basehttp 161 "GET /image_codes/2cd79dbf-5519-4ac8-b2de-b97b7345b48c/ HTTP/1.1" 200 3073
+INFO 2023-12-04 09:12:22,457 basehttp 161 "GET /usernames/root123/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 09:12:30,009 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 09:12:30,900 basehttp 161 "GET /image_codes/9ecdaa9b-557e-4434-9077-1b4244335adf/ HTTP/1.1" 200 3313
+INFO 2023-12-04 09:12:39,046 basehttp 161 "GET /image_codes/b6919cc3-21be-477e-85d4-a71c688c31b9/ HTTP/1.1" 200 3650
+INFO 2023-12-04 09:12:46,898 views 64 025700
+INFO 2023-12-04 09:12:46,903 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 09:12:47,064 basehttp 161 "GET /sms_codes/17613731215/?image_code=e3qy&image_code_id=b6919cc3-21be-477e-85d4-a71c688c31b9 HTTP/1.1" 200 63
+INFO 2023-12-04 09:12:47,082 basehttp 161 "GET /image_codes/2731dd0e-b79b-42df-82a1-d5f3c005accc/ HTTP/1.1" 200 3312
+INFO 2023-12-04 09:12:52,896 basehttp 161 "POST /register/ HTTP/1.1" 200 5529
+INFO 2023-12-04 09:12:52,899 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 09:12:52,903 basehttp 75 - Broken pipe from ('127.0.0.1', 59210)
+
+INFO 2023-12-04 09:12:52,961 basehttp 161 "GET /image_codes/410a2103-e075-45f9-afdd-552233371d93/ HTTP/1.1" 200 3028
+INFO 2023-12-04 09:15:11,114 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2023-12-04 09:15:11,756 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-04 09:15:30,452 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2023-12-04 09:15:31,009 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-04 09:15:44,245 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 09:15:51,773 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 09:15:54,895 basehttp 161 "GET /sms_codes/17613731215/?image_code=fj67&image_code_id=410a2103-e075-45f9-afdd-552233371d93 HTTP/1.1" 200 81
+INFO 2023-12-04 09:15:54,899 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 09:15:54,923 basehttp 161 "GET /image_codes/df27a3ef-43d2-4760-a716-3803881de4a1/ HTTP/1.1" 200 3199
+INFO 2023-12-04 09:16:01,041 basehttp 161 "GET /image_codes/dee6d049-4d9a-4cc9-8bc1-6e0547ba2e66/ HTTP/1.1" 200 2849
+INFO 2023-12-04 09:16:04,041 views 64 386351
+INFO 2023-12-04 09:16:04,046 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 09:16:04,163 basehttp 161 "GET /sms_codes/17613731215/?image_code=jsab&image_code_id=dee6d049-4d9a-4cc9-8bc1-6e0547ba2e66 HTTP/1.1" 200 63
+INFO 2023-12-04 09:16:04,182 basehttp 161 "GET /image_codes/28dabd8c-4d3e-477d-9336-18726e24d56f/ HTTP/1.1" 200 3261
+INFO 2023-12-04 09:16:30,438 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 09:16:30,438 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 09:16:30,444 basehttp 161 "POST /register/ HTTP/1.1" 200 5529
+INFO 2023-12-04 09:16:30,490 basehttp 161 "GET /image_codes/3d6ece16-5a8b-4d5f-846f-d9b9035d9197/ HTTP/1.1" 200 3334
+INFO 2023-12-04 09:25:28,523 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2023-12-04 09:25:29,303 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-04 09:26:46,364 basehttp 161 "GET /register/ HTTP/1.1" 200 5415
+INFO 2023-12-04 09:26:46,434 basehttp 161 "GET /image_codes/555c946e-c379-4a52-9c36-aa5e7facdb20/ HTTP/1.1" 200 3240
+INFO 2023-12-04 09:26:50,983 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 09:37:54,876 basehttp 161 "GET /register/ HTTP/1.1" 200 5415
+INFO 2023-12-04 09:37:54,935 basehttp 161 "GET /image_codes/b873dde7-5e9a-43cb-8eef-e1abb1e43485/ HTTP/1.1" 200 2973
+INFO 2023-12-04 09:37:58,611 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 09:38:08,286 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 09:39:02,128 basehttp 161 "GET /sms_codes/17613731215/?image_code=62t3&image_code_id=b873dde7-5e9a-43cb-8eef-e1abb1e43485 HTTP/1.1" 200 81
+INFO 2023-12-04 09:39:02,138 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 09:39:02,142 basehttp 161 "GET /image_codes/b5ac7603-4037-478b-ac34-755591d45a46/ HTTP/1.1" 200 2977
+INFO 2023-12-04 09:39:31,005 basehttp 161 "GET /sms_codes/17613731215/?image_code=62t3&image_code_id=b5ac7603-4037-478b-ac34-755591d45a46 HTTP/1.1" 200 81
+INFO 2023-12-04 09:39:31,015 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 09:39:31,022 basehttp 161 "GET /image_codes/c5027ca6-7b9d-40a7-a010-a2e43e8de9e6/ HTTP/1.1" 200 3129
+INFO 2023-12-04 09:50:56,089 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-04 09:50:59,358 basehttp 161 "GET /register/ HTTP/1.1" 200 5415
+INFO 2023-12-04 09:50:59,450 basehttp 161 "GET /image_codes/d6b1d85e-e596-4faa-9241-883424298413/ HTTP/1.1" 200 2957
+INFO 2023-12-04 09:51:02,306 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 09:55:52,099 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 09:55:52,209 basehttp 161 "GET /image_codes/ec62a00a-5a5c-4ac6-8d9b-08f7be4cd78c/ HTTP/1.1" 200 2839
+INFO 2023-12-04 09:55:54,668 basehttp 161 "GET /image_codes/49845751-8e5e-41b0-8c69-7ec5da61c5a3/ HTTP/1.1" 200 3058
+INFO 2023-12-04 09:55:55,970 basehttp 161 "GET /image_codes/a429c920-1e63-4b11-9eb3-f163ba81930c/ HTTP/1.1" 200 3204
+INFO 2023-12-04 09:55:59,354 views 64 025767
+INFO 2023-12-04 09:55:59,357 basehttp 161 "GET /sms_codes/17613731215/?image_code=aqsd&image_code_id=a429c920-1e63-4b11-9eb3-f163ba81930c HTTP/1.1" 200 63
+INFO 2023-12-04 09:55:59,359 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 09:55:59,369 basehttp 161 "GET /image_codes/d9e464d3-6ba3-4637-a305-7a6ab2e3c508/ HTTP/1.1" 200 3472
+INFO 2023-12-04 09:56:05,719 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 09:56:05,740 basehttp 161 "POST /register/ HTTP/1.1" 200 5529
+INFO 2023-12-04 09:56:05,740 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 09:56:05,828 basehttp 161 "GET /image_codes/9a67e3f2-42e5-4802-9b73-6be250517bb8/ HTTP/1.1" 200 3250
+INFO 2023-12-04 09:59:45,402 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2023-12-04 09:59:46,073 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-04 10:01:06,979 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2023-12-04 10:01:07,573 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-04 10:01:15,149 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py changed, reloading.
+INFO 2023-12-04 10:01:15,511 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-04 10:01:47,965 basehttp 161 "GET /register/ HTTP/1.1" 200 5415
+INFO 2023-12-04 10:01:48,031 basehttp 161 "GET /image_codes/7bb83cb8-06e9-41fb-a958-8c0478d1b719/ HTTP/1.1" 200 3029
+INFO 2023-12-04 10:01:51,641 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 10:02:10,770 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 10:02:13,641 views 64 194923
+INFO 2023-12-04 10:02:13,643 basehttp 161 "GET /sms_codes/17613731215/?image_code=fzrl&image_code_id=7bb83cb8-06e9-41fb-a958-8c0478d1b719 HTTP/1.1" 200 63
+INFO 2023-12-04 10:02:13,646 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 10:02:13,659 basehttp 161 "GET /image_codes/703a423a-4c40-49b8-90ce-d3f47d203e49/ HTTP/1.1" 200 3051
+INFO 2023-12-04 10:02:19,247 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 10:02:19,249 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 10:02:19,426 basehttp 161 "POST /register/ HTTP/1.1" 302 0
+INFO 2023-12-04 10:02:19,437 basehttp 161 "GET / HTTP/1.1" 200 24696
+WARNING 2023-12-04 10:02:19,636 log 230 Not Found: /carts/simple/
+WARNING 2023-12-04 10:02:19,637 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3395
