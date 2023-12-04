@@ -121,8 +121,8 @@ var vm = new Vue({
             }
         },
         // 检查短信验证码
-        check_sms_code: function () {
-            if (!this.sms_code) {
+        check_sms_code() {
+            if (this.sms_code.length != 6) {
                 this.error_sms_code_message = '请填写短信验证码';
                 this.error_sms_code = true;
             } else {
@@ -138,39 +138,34 @@ var vm = new Vue({
             }
         },
         // 发送手机短信验证码
-        send_sms_code: function () {
+        send_sms_code() {
+            // 避免重复点击
             if (this.sending_flag == true) {
                 return;
             }
             this.sending_flag = true;
 
-            // 校验参数，保证输入框有数据填写
-            this.check_phone();
+            // 校验参数
+            this.check_mobile();
             this.check_image_code();
-
-            if (this.error_phone == true || this.error_image_code == true) {
+            if (this.error_mobile == true || this.error_image_code == true) {
                 this.sending_flag = false;
                 return;
             }
 
-            // 向后端接口发送请求，让后端发送短信验证码
-            var url = this.host + '/sms_codes/' + this.mobile + '/?image_code=' + this.image_code + '&image_code_id=' + this.image_code_id;
+            // 请求短信验证码
+            let url = '/sms_codes/' + this.mobile + '/?image_code=' + this.image_code + '&uuid=' + this.uuid;
             axios.get(url, {
                 responseType: 'json'
             })
                 .then(response => {
-                    // 表示后端发送短信成功
                     if (response.data.code == '0') {
-                        // 倒计时60秒，60秒后允许用户再次点击发送短信验证码的按钮
+                        // 倒计时60秒
                         var num = 60;
-                        // 设置一个计时器
                         var t = setInterval(() => {
                             if (num == 1) {
-                                // 如果计时器到最后, 清除计时器对象
                                 clearInterval(t);
-                                // 将点击获取验证码的按钮展示的文本回复成原始文本
                                 this.sms_code_tip = '获取短信验证码';
-                                // 将点击按钮的onclick事件函数恢复回去
                                 this.sending_flag = false;
                             } else {
                                 num -= 1;

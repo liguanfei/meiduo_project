@@ -5,6 +5,7 @@ from django.contrib.auth import login
 from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.views import View
+from django_redis import get_redis_connection
 
 from meiduo_mall.apps.users.models import User
 from pymysql import DatabaseError
@@ -64,6 +65,7 @@ class RegisterView(View):
         password2 = request.POST.get('password2')
         mobile = request.POST.get('mobile')
         allow = request.POST.get('allow')
+        sms_code_client = request.POST.get('sms_code')
 
         # 判断参数是否齐全
         if not all([username, password, password2, mobile, allow]):
@@ -83,6 +85,26 @@ class RegisterView(View):
         # 判断是否勾选用户协议
         if allow != 'on':
             return http.HttpResponseForbidden('请勾选用户协议')
+
+        # 获取 redis 链接对象
+        redis_conn = get_redis_connection('verify_code')
+
+        # 从 redis 中获取保存的 sms_code
+        sms_code_server = redis_conn.get('sms_code_%s' % mobile)
+
+        # 判断 sms_code_server 是否存在
+        if sms_code_server is None:
+            # 不存在直接返回, 说明服务器的过期了, 超时
+            return render(request,
+                          'register.html',
+                          {'sms_code_errmsg': '无效的短信验证码'})
+
+        # 如果 sms_code_server 存在, 则对比两者:
+        if sms_code_client != sms_code_server.decode():
+            # 对比失败, 说明短信验证码有问题, 直接返回:
+            return render(request,
+                          'register.html',
+                          {'sms_code_errmsg': '输入短信验证码有误'})
 
         # 保存注册数据
         try:

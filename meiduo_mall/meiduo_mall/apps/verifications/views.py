@@ -54,16 +54,37 @@ class SMSCodeView(View):
             return http.JsonResponse({'code': 400,
                                       'errmsg': '输入图形验证码有误'})
 
+        send_flag = redis_conn.get('send_flag_%s' % mobile)
+        if send_flag:
+            return http.JsonResponse({'code': 400,
+                                      'errmsg': '发送短信过于频繁'})
+
         # 7. 生成短信验证码：生成6位数验证码
         sms_code = '%06d' % random.randint(0, 999999)
         logger.info(sms_code)
 
         # 8. 保存短信验证码
-        # 短信验证码有效期，单位：秒
-        # SMS_CODE_REDIS_EXPIRES = 300
-        redis_conn.setex('sms_code_%s' % mobile,
-                         300,
-                         sms_code)
+        # # 短信验证码有效期，单位：秒
+        # # SMS_CODE_REDIS_EXPIRES = 300
+        # redis_conn.setex('sms_code_%s' % mobile,
+        #                  300,
+        #                  sms_code)
+        #
+        # # 重新写入send_flag
+        # # 60s内是否重复发送的标记
+        # # SEND_SMS_CODE_INTERVAL = 60(s)
+        # redis_conn.setex('send_flag_%s' % mobile,
+        #                  60,
+        #                  1)
+        # 创建Redis管道
+        pl = redis_conn.pipeline()
+
+        # 将Redis请求添加到队列
+        pl.setex('sms_%s' % mobile, 300, sms_code)
+        pl.setex('send_flag_%s' % mobile, 60, 1)
+
+        # 执行请求
+        pl.execute()
 
         # 9. 发送短信验证码
         # 短信模板
@@ -71,6 +92,8 @@ class SMSCodeView(View):
         # SEND_SMS_TEMPLATE_ID = 1
         CCP().send_template_sms(mobile, [sms_code, 5],
                                 1)
+
+        print("code: ", sms_code)
 
         # 10. 响应结果
         return http.JsonResponse({'code': 200,

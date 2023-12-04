@@ -190,3 +190,216 @@ INFO 2023-11-30 09:39:43,681 basehttp 161 "GET /image_codes/9b0f0c6d-38db-4a05-a
 INFO 2023-11-30 09:39:44,697 basehttp 161 "GET /image_codes/cb68345d-ec1d-4f5e-a2d0-64d3342492f1/ HTTP/1.1" 200 2932
 INFO 2023-11-30 09:39:45,553 basehttp 161 "GET /image_codes/cba08991-4509-42da-ae94-1595b338dec9/ HTTP/1.1" 200 3380
 INFO 2023-11-30 09:39:46,253 basehttp 161 "GET /image_codes/aa7b52f0-e0ea-4f56-92ea-1dc71c1e467a/ HTTP/1.1" 200 3478
+INFO 2023-12-01 03:11:43,935 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-01 03:11:56,407 basehttp 161 "GET /register/ HTTP/1.1" 200 5264
+INFO 2023-12-01 03:11:56,890 basehttp 161 "GET /image_codes/2596ecd1-935e-473d-bc8d-73b48b4376fd/ HTTP/1.1" 200 3073
+INFO 2023-12-01 03:11:58,464 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-01 03:12:01,297 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-01 03:12:01,393 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-01 03:12:06,538 views 59 582302
+INFO 2023-12-01 03:12:06,542 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-01 03:12:06,774 basehttp 161 "GET /sms_codes/17613731215/?image_code=hf6t&image_code_id=2596ecd1-935e-473d-bc8d-73b48b4376fd HTTP/1.1" 200 63
+INFO 2023-12-01 03:12:06,800 basehttp 161 "GET /image_codes/7bc24727-941b-43ba-a8d5-671bdb7d65e9/ HTTP/1.1" 200 3229
+INFO 2023-12-01 03:40:45,172 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-01 03:40:50,982 basehttp 161 "GET /register/ HTTP/1.1" 200 5264
+INFO 2023-12-01 03:40:51,387 basehttp 161 "GET /image_codes/64f5dcb6-4192-408e-9585-1f9db4429e9a/ HTTP/1.1" 200 3435
+INFO 2023-12-01 03:40:53,343 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-01 03:40:55,006 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-01 03:41:02,018 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-01 03:41:02,031 views 59 421967
+INFO 2023-12-01 03:41:02,269 basehttp 161 "GET /sms_codes/17613731215/?image_code=koov&image_code_id=64f5dcb6-4192-408e-9585-1f9db4429e9a HTTP/1.1" 200 63
+INFO 2023-12-01 03:41:02,297 basehttp 161 "GET /image_codes/1082e08f-db1d-49a4-b9b1-28273c559af5/ HTTP/1.1" 200 3056
+INFO 2023-12-04 06:55:04,315 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-04 06:55:14,762 basehttp 161 "GET /register/ HTTP/1.1" 200 5427
+INFO 2023-12-04 06:55:14,822 basehttp 161 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2023-12-04 06:55:14,825 basehttp 161 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2023-12-04 06:55:14,892 basehttp 161 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+ERROR 2023-12-04 06:55:14,995 log 230 Internal Server Error: /image_codes/49e89505-b3f8-4be1-a99a-168b5e70938d/
+Traceback (most recent call last):
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/redis/connection.py", line 265, in connect
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/redis/connection.py", line 265, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/redis/connection.py", line 627, in _connect
+    raise err
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/redis/connection.py", line 615, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 111, in get
+    redis_conn.setex('img_%s' % uuid, 300, text)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/redis/commands/core.py", line 2366, in setex
+    return self.execute_command("SETEX", name, time, value)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/redis/client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/redis/connection.py", line 1086, in get_connection
+    connection.connect()
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/redis/connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2023-12-04 06:55:14,999 basehttp 161 "GET /image_codes/49e89505-b3f8-4be1-a99a-168b5e70938d/ HTTP/1.1" 500 127410
+WARNING 2023-12-04 06:55:15,029 log 230 Not Found: /favicon.ico
+WARNING 2023-12-04 06:55:15,029 basehttp 161 "GET /favicon.ico HTTP/1.1" 404 3219
+INFO 2023-12-04 06:55:17,350 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+ERROR 2023-12-04 06:55:17,493 log 230 Internal Server Error: /image_codes/ec89a732-2d36-4c7d-bd19-94c8a5a630b5/
+Traceback (most recent call last):
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/redis/connection.py", line 265, in connect
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/redis/connection.py", line 265, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/redis/connection.py", line 627, in _connect
+    raise err
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/redis/connection.py", line 615, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 111, in get
+    redis_conn.setex('img_%s' % uuid, 300, text)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/redis/commands/core.py", line 2366, in setex
+    return self.execute_command("SETEX", name, time, value)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/redis/client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/redis/connection.py", line 1086, in get_connection
+    connection.connect()
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/redis/connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2023-12-04 06:55:17,494 basehttp 161 "GET /image_codes/ec89a732-2d36-4c7d-bd19-94c8a5a630b5/ HTTP/1.1" 500 127422
+INFO 2023-12-04 06:58:16,883 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-04 06:58:19,922 basehttp 161 "GET /register/ HTTP/1.1" 200 5427
+INFO 2023-12-04 06:58:19,994 basehttp 161 "GET /image_codes/74e3a831-acca-4fdc-9700-dde76d023ce7/ HTTP/1.1" 200 2915
+INFO 2023-12-04 06:58:21,681 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 06:58:21,780 basehttp 161 "GET /image_codes/aef049fa-1562-475a-91dd-881043b8bf4f/ HTTP/1.1" 200 3457
+INFO 2023-12-04 06:58:22,339 basehttp 161 "GET /image_codes/f559ac72-fc40-474c-abbc-f531e147baae/ HTTP/1.1" 200 3048
+INFO 2023-12-04 06:58:23,004 basehttp 161 "GET /image_codes/5ae62d20-5bc4-4b04-af19-3dd54755961f/ HTTP/1.1" 200 3326
+INFO 2023-12-04 06:58:23,695 basehttp 161 "GET /image_codes/0e535a1e-b3cc-4c6a-ade3-96d828560f7f/ HTTP/1.1" 200 2960
+INFO 2023-12-04 06:58:25,272 basehttp 161 "GET /image_codes/c2a533c1-9219-416a-9276-a7d15462be3e/ HTTP/1.1" 200 2892
+INFO 2023-12-04 06:58:42,417 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 06:58:42,500 views 64 381457
+INFO 2023-12-04 06:58:42,505 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 06:58:42,688 basehttp 161 "GET /sms_codes/17613731215/?image_code=clsa&image_code_id=c2a533c1-9219-416a-9276-a7d15462be3e HTTP/1.1" 200 63
+INFO 2023-12-04 06:58:42,700 basehttp 161 "GET /image_codes/4576b821-5347-4b46-a10b-8ab3a289c12a/ HTTP/1.1" 200 3263
+INFO 2023-12-04 06:58:47,618 basehttp 161 "GET /sms_codes/17613731215/?image_code=clsa&image_code_id=4576b821-5347-4b46-a10b-8ab3a289c12a HTTP/1.1" 200 81
+INFO 2023-12-04 06:58:47,629 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 06:58:47,633 basehttp 161 "GET /image_codes/4ee90e3e-6697-475a-8fb5-8308baa39a75/ HTTP/1.1" 200 2907
+INFO 2023-12-04 06:58:54,233 basehttp 161 "GET /sms_codes/17613731215/?image_code=cjhp&image_code_id=4ee90e3e-6697-475a-8fb5-8308baa39a75 HTTP/1.1" 200 75
+INFO 2023-12-04 06:58:54,241 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 06:58:54,245 basehttp 161 "GET /image_codes/efb70294-38ef-4439-b23f-d85431e039b2/ HTTP/1.1" 200 3186
+INFO 2023-12-04 06:59:55,328 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-04 06:59:58,262 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 06:59:58,265 views 64 191896
+INFO 2023-12-04 06:59:58,445 basehttp 161 "GET /sms_codes/17613731215/?image_code=vxjj&image_code_id=efb70294-38ef-4439-b23f-d85431e039b2 HTTP/1.1" 200 63
+INFO 2023-12-04 06:59:58,485 basehttp 161 "GET /image_codes/b3c58856-0825-42d2-94cd-6704d7b201b4/ HTTP/1.1" 200 2810
+INFO 2023-12-04 07:00:05,718 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+WARNING 2023-12-04 07:00:05,722 log 230 Forbidden: /register/
+INFO 2023-12-04 07:00:05,723 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+WARNING 2023-12-04 07:00:05,723 basehttp 161 "POST /register/ HTTP/1.1" 403 18
+INFO 2023-12-04 07:00:11,800 basehttp 161 "GET /image_codes/46ea55e3-2172-4075-9359-75f77f5e9dbc/ HTTP/1.1" 200 3201
+INFO 2023-12-04 07:22:53,036 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-04 07:22:57,144 basehttp 161 "GET /register/ HTTP/1.1" 200 5427
+INFO 2023-12-04 07:22:57,232 basehttp 161 "GET /image_codes/05b7ef07-924e-4350-93df-98f061e1a805/ HTTP/1.1" 200 3732
+INFO 2023-12-04 07:23:07,947 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 07:23:09,175 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 07:29:02,083 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 07:33:12,374 basehttp 161 "GET /usernames/root123/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 07:33:24,241 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 07:33:26,948 basehttp 161 "GET /sms_codes/17613731215/?image_code=ledh&image_code_id=05b7ef07-924e-4350-93df-98f061e1a805 HTTP/1.1" 200 69
+INFO 2023-12-04 07:33:26,951 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 07:33:26,971 basehttp 161 "GET /image_codes/be761a4b-bb38-48fe-a49e-510d3a54234f/ HTTP/1.1" 200 3129
+INFO 2023-12-04 07:33:32,486 views 64 324892
+INFO 2023-12-04 07:33:32,494 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 07:33:32,730 basehttp 161 "GET /sms_codes/17613731215/?image_code=kzdy&image_code_id=be761a4b-bb38-48fe-a49e-510d3a54234f HTTP/1.1" 200 63
+INFO 2023-12-04 07:33:32,745 basehttp 161 "GET /image_codes/80be7e13-6864-4a32-974a-b4e38687eea0/ HTTP/1.1" 200 2980
+WARNING 2023-12-04 07:33:39,444 log 230 Forbidden: /register/
+WARNING 2023-12-04 07:33:39,445 basehttp 161 "POST /register/ HTTP/1.1" 403 18
+INFO 2023-12-04 07:33:39,449 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 07:33:39,454 basehttp 75 - Broken pipe from ('127.0.0.1', 57680)
+
+INFO 2023-12-04 08:10:49,968 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2023-12-04 08:10:50,676 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-04 08:10:54,090 basehttp 161 "GET /image_codes/6dddc916-7d27-4959-b16c-3f0513a75add/ HTTP/1.1" 200 3229
+INFO 2023-12-04 08:11:04,023 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 08:11:04,590 basehttp 161 "GET /image_codes/ccda4fb7-b35e-4546-b484-a2e229a4c754/ HTTP/1.1" 200 3282
+INFO 2023-12-04 08:11:08,381 views 64 912035
+INFO 2023-12-04 08:11:08,386 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 08:11:08,628 basehttp 161 "GET /sms_codes/17613731215/?image_code=vmcq&image_code_id=ccda4fb7-b35e-4546-b484-a2e229a4c754 HTTP/1.1" 200 63
+INFO 2023-12-04 08:11:08,645 basehttp 161 "GET /image_codes/3ba40c5f-221b-4066-8af4-03b35948d2c3/ HTTP/1.1" 200 3381
+INFO 2023-12-04 08:11:14,055 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 08:11:18,625 basehttp 161 "GET /usernames/root123/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 08:11:18,754 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 08:11:18,754 basehttp 161 "GET /usernames/root123/count/ HTTP/1.1" 200 42
+WARNING 2023-12-04 08:11:18,766 log 230 Forbidden: /register/
+WARNING 2023-12-04 08:11:18,767 basehttp 161 "POST /register/ HTTP/1.1" 403 18
+INFO 2023-12-04 08:13:56,996 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-04 08:13:59,727 basehttp 161 "GET /register/ HTTP/1.1" 200 5427
+INFO 2023-12-04 08:13:59,798 basehttp 161 "GET /image_codes/dfe7a1e2-43ec-45d3-8cad-0bce77a75d26/ HTTP/1.1" 200 3282
+INFO 2023-12-04 08:14:00,948 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 08:14:04,892 basehttp 161 "GET /usernames/root123/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 08:14:15,823 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 08:14:20,303 views 64 499361
+INFO 2023-12-04 08:14:20,306 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 08:14:20,465 basehttp 161 "GET /sms_codes/17613731215/?image_code=t9qm&image_code_id=dfe7a1e2-43ec-45d3-8cad-0bce77a75d26 HTTP/1.1" 200 63
+INFO 2023-12-04 08:14:20,488 basehttp 161 "GET /image_codes/ccbc6d70-86de-4b20-860d-ee6b9724d13b/ HTTP/1.1" 200 3158
+WARNING 2023-12-04 08:14:28,926 log 230 Forbidden: /register/
+WARNING 2023-12-04 08:14:28,927 basehttp 161 "POST /register/ HTTP/1.1" 403 18
+INFO 2023-12-04 08:14:28,932 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 08:14:28,933 basehttp 75 - Broken pipe from ('127.0.0.1', 64990)
+
+INFO 2023-12-04 08:26:15,654 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-04 08:26:19,310 basehttp 161 "GET /register/ HTTP/1.1" 200 5427
+INFO 2023-12-04 08:26:19,418 basehttp 161 "GET /image_codes/387f5999-c821-4155-afe4-9e4eb4013098/ HTTP/1.1" 200 3072
+INFO 2023-12-04 08:26:20,381 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 08:26:26,022 basehttp 161 "GET /usernames/root123/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 08:26:35,966 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 08:26:39,917 views 64 519981
+INFO 2023-12-04 08:26:39,922 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 08:26:40,107 basehttp 161 "GET /sms_codes/17613731215/?image_code=fi6l&image_code_id=387f5999-c821-4155-afe4-9e4eb4013098 HTTP/1.1" 200 63
+INFO 2023-12-04 08:26:40,122 basehttp 161 "GET /image_codes/2619a1cb-cbef-4f7b-87f1-cbb4b0527c4a/ HTTP/1.1" 200 3424
+WARNING 2023-12-04 08:26:45,203 log 230 Forbidden: /register/
+WARNING 2023-12-04 08:26:45,204 basehttp 161 "POST /register/ HTTP/1.1" 403 18
+INFO 2023-12-04 08:26:45,209 basehttp 75 - Broken pipe from ('127.0.0.1', 50724)
+
+INFO 2023-12-04 08:26:45,210 basehttp 75 - Broken pipe from ('127.0.0.1', 50723)
+
+INFO 2023-12-04 08:27:39,833 basehttp 161 "GET /register/ HTTP/1.1" 200 5425
+INFO 2023-12-04 08:27:39,894 basehttp 161 "GET /image_codes/9742e463-0fb2-4db2-9102-212cf0d23a32/ HTTP/1.1" 200 2786
+INFO 2023-12-04 08:27:41,264 basehttp 161 "GET /usernames/admin/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 08:27:44,799 basehttp 161 "GET /usernames/root123/count/ HTTP/1.1" 200 42
+INFO 2023-12-04 08:27:55,377 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 08:27:56,810 basehttp 161 "GET /image_codes/0f0de7ad-50b5-4db1-b3c9-6be70b788911/ HTTP/1.1" 200 3115
+INFO 2023-12-04 08:28:01,426 views 64 476873
+INFO 2023-12-04 08:28:01,430 basehttp 161 "GET /mobiles/17613731215/count/ HTTP/1.1" 200 41
+INFO 2023-12-04 08:28:01,550 basehttp 161 "GET /sms_codes/17613731215/?image_code=rsru&image_code_id=0f0de7ad-50b5-4db1-b3c9-6be70b788911 HTTP/1.1" 200 63
+INFO 2023-12-04 08:28:01,567 basehttp 161 "GET /image_codes/8d69cd22-0c83-470b-8e3f-2489c4135a81/ HTTP/1.1" 200 2884
+INFO 2023-12-04 08:28:06,295 basehttp 161 "POST /register/ HTTP/1.1" 200 5539
+INFO 2023-12-04 08:28:06,301 basehttp 75 - Broken pipe from ('127.0.0.1', 50963)
+
+INFO 2023-12-04 08:28:06,303 basehttp 75 - Broken pipe from ('127.0.0.1', 51049)
+
+INFO 2023-12-04 08:28:06,331 basehttp 161 "GET /image_codes/d472dfbd-fcf1-4e20-89de-7b8ef98c86aa/ HTTP/1.1" 200 2942
