@@ -15,7 +15,3 @@ class User(AbstractUser):
         db_table = 'tb_users'
         verbose_name = '用户'
         verbose_name_plural = verbose_name
-
-    # 在 str 魔法方法中, 返回用户名称
-    def __str__(self):
-        return self.username

@@ -7,7 +7,7 @@ from django.urls import reverse
 from django.views import View
 from django_redis import get_redis_connection
 
-from meiduo_mall.apps.users.models import User
+from users.models import User
 from pymysql import DatabaseError
 
 
@@ -53,8 +53,6 @@ class LoginView(View):
         if user is None:
             return render(request, 'login.html', {'account_errmsg': '用户名或密码错误'})
 
-        # 实现状态保持
-        login(request, user)
         # 设置状态保持的周期
         if remembered != 'on':
             # 不记住用户：浏览器会话结束就过期
@@ -62,6 +60,9 @@ class LoginView(View):
         else:
             # 记住用户：None 表示两周后过期
             request.session.set_expiry(None)
+
+        # 实现状态保持
+        login(request, user)
 
         # 响应登录结果
         return redirect(reverse('contents:index'))
@@ -161,8 +162,6 @@ class RegisterView(View):
             return render(request,
                           'register.html',
                           {'sms_code_errmsg': '输入短信验证码有误'})
-
-        print("2")
 
         # 保存注册数据
         try:

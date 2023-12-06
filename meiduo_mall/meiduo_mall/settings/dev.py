@@ -14,7 +14,7 @@ import sys
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # 追加导包路径
 sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
@@ -57,19 +57,6 @@ ROOT_URLCONF = 'meiduo_mall.urls'
 
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
-        },
-    },
-    {
         'BACKEND': 'django.template.backends.jinja2.Jinja2',
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
@@ -84,6 +71,20 @@ TEMPLATES = [
             'environment': 'meiduo_mall.utils.jinja2_env.jinja2_environment',
         },
     },
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+
 ]
 
 WSGI_APPLICATION = 'meiduo_mall.wsgi.application'
@@ -101,32 +102,6 @@ DATABASES = {
         'NAME': 'meiduo_mall'  # 数据库名字
     },
 }
-
-CACHES = {
-    "default": {  # 默认存储信息: 存到 0 号库
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379/0",
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-        }
-    },
-    "session": {  # session 信息: 存到 1 号库
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379/1",
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-        }
-    },
-    "verify_code": {  # 验证码
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379/2",
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-        }
-    },
-}
-SESSION_ENGINE = "django.contrib.sessions.backends.cache"
-SESSION_CACHE_ALIAS = "session"
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -164,10 +139,35 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+# 配置静态文件加载路径
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CACHES = {
+    "default": {  # 默认存储信息: 存到 0 号库
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/0",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    "session": {  # session 信息: 存到 1 号库
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    "verify_code": {  # 验证码
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/2",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+}
+
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+SESSION_CACHE_ALIAS = "session"
 
 LOGGING = {
     'version': 1,
@@ -210,10 +210,10 @@ LOGGING = {
     }
 }
 
-# 默认就有的部分:
-STATIC_URL = '/static/'
-
-# 配置静态文件加载路径
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-
 AUTH_USER_MODEL = 'users.User'
+
+# 指定自定义的用户认证后端:
+AUTHENTICATION_BACKENDS = ['users.utils.UsernameMobileAuthBackend']
+
+# Default primary key field type
+# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

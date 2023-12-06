@@ -555,3 +555,93 @@ INFO 2023-12-04 10:02:19,426 basehttp 161 "POST /register/ HTTP/1.1" 302 0
 INFO 2023-12-04 10:02:19,437 basehttp 161 "GET / HTTP/1.1" 200 24696
 WARNING 2023-12-04 10:02:19,636 log 230 Not Found: /carts/simple/
 WARNING 2023-12-04 10:02:19,637 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3395
+INFO 2023-12-06 07:54:24,142 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-06 07:54:32,936 basehttp 161 "GET / HTTP/1.1" 200 24696
+INFO 2023-12-06 07:54:33,053 basehttp 161 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2023-12-06 07:54:33,064 basehttp 161 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2023-12-06 07:54:33,066 basehttp 161 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2023-12-06 07:54:33,085 basehttp 161 "GET /static/images/slide01.jpg HTTP/1.1" 200 67813
+INFO 2023-12-06 07:54:33,103 basehttp 161 "GET /static/images/slide02.jpg HTTP/1.1" 200 89905
+INFO 2023-12-06 07:54:33,129 basehttp 161 "GET /static/images/slide03.jpg HTTP/1.1" 200 70152
+INFO 2023-12-06 07:54:33,153 basehttp 161 "GET /static/images/slide04.jpg HTTP/1.1" 200 107973
+INFO 2023-12-06 07:54:33,155 basehttp 161 "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+WARNING 2023-12-06 07:54:33,350 log 230 Not Found: /carts/simple/
+WARNING 2023-12-06 07:54:33,352 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3395
+INFO 2023-12-06 07:54:35,420 basehttp 161 "GET /register/ HTTP/1.1" 200 5415
+INFO 2023-12-06 07:54:35,542 basehttp 161 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+INFO 2023-12-06 07:54:35,582 basehttp 161 "GET /image_codes/4d7399c5-324a-450d-b005-27946a00da00/ HTTP/1.1" 200 3153
+INFO 2023-12-06 07:54:44,671 basehttp 161 "GET /login/ HTTP/1.1" 200 4195
+INFO 2023-12-06 07:54:44,713 basehttp 161 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+INFO 2023-12-06 07:54:47,722 basehttp 161 "POST /login/ HTTP/1.1" 302 0
+INFO 2023-12-06 07:54:47,729 basehttp 161 "GET / HTTP/1.1" 200 24696
+WARNING 2023-12-06 07:54:47,890 log 230 Not Found: /carts/simple/
+WARNING 2023-12-06 07:54:47,891 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3395
+INFO 2023-12-06 07:58:08,815 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-06 07:58:16,080 basehttp 161 "GET /register/ HTTP/1.1" 200 5415
+INFO 2023-12-06 07:58:16,275 basehttp 161 "GET /image_codes/0777ed8b-6236-42ca-81e2-4b41e9681924/ HTTP/1.1" 200 3028
+INFO 2023-12-06 07:58:17,504 basehttp 161 "GET /login/ HTTP/1.1" 200 4195
+ERROR 2023-12-06 07:58:23,887 log 230 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py", line 52, in post
+    user = authenticate(username=username, password=password)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/views/decorators/debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 68, in authenticate
+    for backend, backend_path in _get_backends(return_tuples=True):
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 27, in _get_backends
+    backend = load_backend(backend_path)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 21, in load_backend
+    return import_string(path)()
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/utils/module_loading.py", line 17, in import_string
+    module = import_module(module_path)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/utils.py", line 14, in <module>
+    from .models import User
+  File "/Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/models.py", line 7, in <module>
+    class User(AbstractUser):
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/db/models/base.py", line 116, in __new__
+    "INSTALLED_APPS." % (module, name)
+RuntimeError: Model class users.models.User doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+ERROR 2023-12-06 07:58:23,893 basehttp 161 "POST /login/ HTTP/1.1" 500 158520
+INFO 2023-12-06 08:00:13,736 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-06 08:00:21,974 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/apps.py changed, reloading.
+INFO 2023-12-06 08:00:22,385 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-06 08:00:24,776 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/apps.py changed, reloading.
+INFO 2023-12-06 08:00:25,164 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-06 08:00:41,495 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/apps.py changed, reloading.
+INFO 2023-12-06 08:00:42,028 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-06 08:00:52,745 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-06 08:01:07,236 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/apps.py changed, reloading.
+INFO 2023-12-06 08:01:07,852 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-06 08:01:35,712 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/apps.py changed, reloading.
+INFO 2023-12-06 08:01:36,288 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-06 08:02:19,171 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-06 08:37:47,709 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-06 08:40:41,569 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-06 08:40:53,419 basehttp 161 "GET /login/ HTTP/1.1" 200 4195
+INFO 2023-12-06 08:40:55,298 basehttp 161 "POST /login/ HTTP/1.1" 302 0
+INFO 2023-12-06 08:40:55,313 basehttp 161 "GET / HTTP/1.1" 200 24696
+WARNING 2023-12-06 08:40:55,605 log 230 Not Found: /carts/simple/
+WARNING 2023-12-06 08:40:55,606 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3395
+INFO 2023-12-06 08:40:57,670 basehttp 161 "GET /register/ HTTP/1.1" 200 5415
+INFO 2023-12-06 08:40:57,858 basehttp 161 "GET /image_codes/5e0c025e-ae75-417d-8e37-e2b5ab31d835/ HTTP/1.1" 200 3099
+INFO 2023-12-06 08:40:58,840 basehttp 161 "GET /login/ HTTP/1.1" 200 4195
+INFO 2023-12-06 08:41:06,029 basehttp 161 "POST /login/ HTTP/1.1" 302 0
+INFO 2023-12-06 08:41:06,036 basehttp 161 "GET / HTTP/1.1" 200 24696
+WARNING 2023-12-06 08:41:06,119 log 230 Not Found: /carts/simple/
+WARNING 2023-12-06 08:41:06,120 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3395
