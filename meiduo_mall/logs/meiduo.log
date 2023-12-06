@@ -645,3 +645,159 @@ INFO 2023-12-06 08:41:06,029 basehttp 161 "POST /login/ HTTP/1.1" 302 0
 INFO 2023-12-06 08:41:06,036 basehttp 161 "GET / HTTP/1.1" 200 24696
 WARNING 2023-12-06 08:41:06,119 log 230 Not Found: /carts/simple/
 WARNING 2023-12-06 08:41:06,120 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3395
+INFO 2023-12-06 08:52:39,561 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-06 08:52:46,087 basehttp 161 "GET /login/ HTTP/1.1" 200 4195
+INFO 2023-12-06 08:52:48,498 basehttp 161 "POST /login/ HTTP/1.1" 302 0
+INFO 2023-12-06 08:52:48,514 basehttp 161 "GET / HTTP/1.1" 200 34079
+INFO 2023-12-06 08:52:48,595 basehttp 161 "GET /static/js/base.js HTTP/1.1" 200 1016
+WARNING 2023-12-06 08:52:48,848 log 230 Not Found: /carts/simple/
+WARNING 2023-12-06 08:52:48,848 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3395
+INFO 2023-12-06 09:48:33,799 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-06 09:48:39,596 basehttp 161 "GET / HTTP/1.1" 200 34265
+WARNING 2023-12-06 09:48:39,876 log 230 Not Found: /carts/simple/
+WARNING 2023-12-06 09:48:39,876 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3735
+ERROR 2023-12-06 09:48:44,118 log 230 Internal Server Error: /info/
+Traceback (most recent call last):
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py", line 27, in get
+    if request.user.is_authenticated():
+TypeError: 'bool' object is not callable
+ERROR 2023-12-06 09:48:44,120 basehttp 161 "GET /info/ HTTP/1.1" 500 87356
+INFO 2023-12-06 09:51:34,862 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2023-12-06 09:51:35,543 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-06 09:51:44,063 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2023-12-06 09:51:44,915 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-06 09:52:27,154 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2023-12-06 09:52:27,783 autoreload 637 Watching for file changes with StatReloader
+ERROR 2023-12-06 09:53:03,027 log 230 Internal Server Error: /info/
+Traceback (most recent call last):
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py", line 25, in get
+    return render(request, 'user_center_info.html')
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: user_center_info.html
+ERROR 2023-12-06 09:53:03,030 basehttp 161 "GET /info/ HTTP/1.1" 500 102723
+INFO 2023-12-06 09:53:06,484 basehttp 161 "GET / HTTP/1.1" 200 34265
+WARNING 2023-12-06 09:53:06,598 log 230 Not Found: /carts/simple/
+WARNING 2023-12-06 09:53:06,599 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3735
+ERROR 2023-12-06 09:53:09,200 log 230 Internal Server Error: /info/
+Traceback (most recent call last):
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py", line 25, in get
+    return render(request, 'user_center_info.html')
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: user_center_info.html
+ERROR 2023-12-06 09:53:09,201 basehttp 161 "GET /info/ HTTP/1.1" 500 102737
+INFO 2023-12-06 09:53:21,461 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2023-12-06 09:53:22,178 autoreload 637 Watching for file changes with StatReloader
+ERROR 2023-12-06 09:54:08,879 log 230 Internal Server Error: /info/
+Traceback (most recent call last):
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py", line 27, in get
+    if request.user.is_authenticated():
+TypeError: 'bool' object is not callable
+ERROR 2023-12-06 09:54:08,881 basehttp 161 "GET /info/ HTTP/1.1" 500 87342
+INFO 2023-12-06 09:55:02,634 autoreload 251 /Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2023-12-06 09:55:03,297 autoreload 637 Watching for file changes with StatReloader
+ERROR 2023-12-06 09:55:06,640 log 230 Internal Server Error: /info/
+Traceback (most recent call last):
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/dickens/Desktop/test/python/django/projects/meiduo_project/meiduo_mall/meiduo_mall/apps/users/views.py", line 29, in get
+    return render(request, 'user_center_info.html')
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/dickens/.virtualenvs/meiduo_mall/lib/python3.7/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: user_center_info.html
+ERROR 2023-12-06 09:55:06,641 basehttp 161 "GET /info/ HTTP/1.1" 500 102880
+INFO 2023-12-06 09:55:27,434 basehttp 161 "GET /info/ HTTP/1.1" 200 5394
+INFO 2023-12-06 09:55:27,509 basehttp 161 "GET /static/images/goods/goods006.jpg HTTP/1.1" 200 6836
+INFO 2023-12-06 09:55:48,264 basehttp 161 "GET / HTTP/1.1" 200 34265
+WARNING 2023-12-06 09:55:48,444 log 230 Not Found: /carts/simple/
+WARNING 2023-12-06 09:55:48,446 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3735
+INFO 2023-12-06 09:55:50,201 basehttp 161 "GET /logout/ HTTP/1.1" 302 0
+INFO 2023-12-06 09:55:50,209 basehttp 161 "GET / HTTP/1.1" 200 34265
+WARNING 2023-12-06 09:55:50,295 log 230 Not Found: /carts/simple/
+WARNING 2023-12-06 09:55:50,297 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3735
+INFO 2023-12-06 09:55:52,846 basehttp 161 "GET /info/ HTTP/1.1" 302 0
+WARNING 2023-12-06 09:55:52,856 log 230 Not Found: /accounts/login/
+WARNING 2023-12-06 09:55:52,857 basehttp 161 "GET /accounts/login/?next=/info/ HTTP/1.1" 404 3753
+INFO 2023-12-06 09:57:23,019 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-12-06 09:57:28,906 basehttp 161 "GET / HTTP/1.1" 200 34265
+WARNING 2023-12-06 09:57:29,035 log 230 Not Found: /carts/simple/
+WARNING 2023-12-06 09:57:29,036 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3735
+INFO 2023-12-06 09:57:33,521 basehttp 161 "GET /info/ HTTP/1.1" 302 0
+WARNING 2023-12-06 09:57:33,534 log 230 Not Found: /accounts/login/
+WARNING 2023-12-06 09:57:33,534 basehttp 161 "GET /accounts/login/?next=/info/ HTTP/1.1" 404 3753
+INFO 2023-12-06 09:58:09,508 basehttp 161 "GET / HTTP/1.1" 200 34265
+WARNING 2023-12-06 09:58:09,599 log 230 Not Found: /carts/simple/
+WARNING 2023-12-06 09:58:09,600 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3735
+INFO 2023-12-06 09:58:11,636 basehttp 161 "GET /info/ HTTP/1.1" 302 0
+WARNING 2023-12-06 09:58:11,650 log 230 Not Found: /accounts/login/
+WARNING 2023-12-06 09:58:11,650 basehttp 161 "GET /accounts/login/?next=/info/ HTTP/1.1" 404 3753
+INFO 2023-12-06 10:01:56,119 basehttp 161 "GET /login/?next=/info/ HTTP/1.1" 200 4195
+INFO 2023-12-06 10:02:04,986 basehttp 161 "GET / HTTP/1.1" 200 34265
+WARNING 2023-12-06 10:02:05,081 log 230 Not Found: /carts/simple/
+WARNING 2023-12-06 10:02:05,081 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3735
+WARNING 2023-12-06 10:02:09,415 log 230 Not Found: /user_center_order.html
+WARNING 2023-12-06 10:02:09,415 basehttp 161 "GET /user_center_order.html HTTP/1.1" 404 3762
+INFO 2023-12-06 10:02:14,072 basehttp 161 "GET /info/ HTTP/1.1" 302 0
+WARNING 2023-12-06 10:02:14,083 log 230 Not Found: /accounts/login/
+WARNING 2023-12-06 10:02:14,083 basehttp 161 "GET /accounts/login/?next=/info/ HTTP/1.1" 404 3753

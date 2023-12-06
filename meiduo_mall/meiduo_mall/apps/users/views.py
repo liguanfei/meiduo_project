@@ -1,7 +1,8 @@
 import re
 
 from django import http
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, logout
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.views import View
@@ -10,8 +11,45 @@ from django_redis import get_redis_connection
 from users.models import User
 from pymysql import DatabaseError
 
+from utils.views import LoginRequiredMixin
+
 
 # Create your views here.
+
+
+class UserInfoView(LoginRequiredMixin, View):
+    """用户中心"""
+
+    def get(self, request):
+        """提供个人信息界面"""
+        # 如果使用该方法, 它的用法如下所示:
+        # 进行判断: 是否登录验证
+        if request.user.is_authenticated:
+            # 如果登录, 则正常加载用户中心页面
+            return render(request, 'user_center_info.html')
+        else:
+            # 否则, 进入登录页面,进行登录
+            return redirect(reverse('users:login'))
+
+
+class LogoutView(View):
+    """退出登录"""
+
+    def get(self, request):
+        """实现退出登录逻辑"""
+
+        # 清理 session
+        logout(request)
+
+        # 退出登录，重定向到登录页
+        response = redirect(reverse('contents:index'))
+
+        # 退出登录时清除 cookie 中的 username
+        response.delete_cookie('username')
+
+        # 返回响应
+        return response
+
 
 class LoginView(View):
     """用户名登录"""
@@ -64,8 +102,21 @@ class LoginView(View):
         # 实现状态保持
         login(request, user)
 
-        # 响应登录结果
-        return redirect(reverse('contents:index'))
+        # 获取跳转过来的地址:
+        next = request.GET.get('next')
+        # 判断参数是否存在:
+        if next:
+            # 如果是从别的页面跳转过来的, 则重新跳转到原来的页面
+            response = redirect(next)
+        else:
+            # 如果是直接登陆成功，就重定向到首页
+            response = redirect(reverse('contents:index'))
+
+        # 设置 cookie 信息
+        response.set_cookie('username', user.username, max_age=3600 * 24 * 15)
+
+        # 返回响应
+        return response
 
 
 class MobileCountView(View):
@@ -172,5 +223,12 @@ class RegisterView(View):
         # 实现状态保持
         login(request, user)
 
-        # 响应注册结果
-        return redirect(reverse('contents:index'))
+        # 生成响应对象
+        response = redirect(reverse('contents:index'))
+
+        # 在响应对象中设置用户名信息.
+        # 将用户名写入到 cookie，有效期 15 天
+        response.set_cookie('username', user.username, max_age=3600 * 24 * 15)
+
+        # 返回响应结果
+        return response
